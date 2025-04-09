@@ -1,0 +1,49 @@
+.Version-detail-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.Version-detail-container h1 {
+  font-size: 2rem;
+  color: #2e86de;
+  margin-bottom: 10px;
+}
+
+.Version-detail-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.Version-detail-container h2 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  color: #444;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.Version-detail-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.Version-detail-container ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.Version-detail-container img {
+  display: block;
+  margin: 30px auto 0;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

@@ -1,0 +1,30 @@
+/* Reset margin and padding for the container */
+.homeContainer {
+  margin-top: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  gap: 10px;                
+  /* min-height: 100vh; */
+}
+
+/* Button Styling */
+.button {
+  background-color: #007F5F;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #005f42;
+}
+
+.button:focus {
+  outline: none;
+}

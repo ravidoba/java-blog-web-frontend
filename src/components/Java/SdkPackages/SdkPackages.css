@@ -1,0 +1,22 @@
+.sdk-packages-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .package-list {
+    list-style-type: square;
+    padding-left: 20px;
+    columns: 2; /* or 3 depending on your layout */
+    gap: 20px;
+  }
+  
+  .package-list li {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  

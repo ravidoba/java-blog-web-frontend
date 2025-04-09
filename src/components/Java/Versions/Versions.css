@@ -1,0 +1,28 @@
+.versions-container {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+    justify-items: center;
+  }
+  
+  .button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007396;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #005f73;
+  }
+  

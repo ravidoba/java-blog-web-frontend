@@ -1,0 +1,31 @@
+.page-container {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .page-container h1 {
+    font-size: 32px;
+    color: #007396;
+    margin-bottom: 20px;
+  }
+  
+  .page-container h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    color: #333;
+  }
+  
+  .page-container ul, .page-container ol {
+    padding-left: 20px;
+  }
+  
+  .page-container li {
+    margin-bottom: 10px;
+  }
+  

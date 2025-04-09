@@ -1,0 +1,55 @@
+/* Footer Styling */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007F5F;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  /* Footer Text */
+  .footer p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #B9E4C9;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 1024px) {
+    .footer {
+      padding: 15px;
+    }
+  
+    .footer p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer {
+      padding: 10px;
+    }
+  
+    .footer p {
+      font-size: 0.75rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .footer {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .footer p {
+      font-size: 0.7rem;
+    }
+  }
+  

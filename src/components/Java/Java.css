@@ -1,0 +1,22 @@
+.java-container {
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 600px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .button {
+    margin: 10px; /* space around each button */
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  
