@@ -1,0 +1,35 @@
+.install-tools-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .install-tools-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .tools-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .tools-list li {
+    margin: 10px 0;
+  }
+  
+  .tools-list a {
+    text-decoration: none;
+    color: #007acc;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .tools-list a:hover {
+    color: #005f99;
+  }
+  

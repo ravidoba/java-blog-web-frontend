@@ -2,13 +2,14 @@ import React from 'react';
 import './JWT.css';
 
 const JWT: React.FC = () => {
-  return (
-    <div className="jwt-container">
-      <h1>Security with JWT</h1>
-      <h2>🧩 Maven Dependencies</h2>
-      <pre>
-        <code>
-          {`<dependency>
+    return (
+        <div className="jwt-container">
+            <h1>Security with JWT</h1>
+            <p>Reference Link : https://medium.com/@tericcabrel/implement-jwt-authentication-in-a-spring-boot-3-application-5839e4fd8fac</p>
+            <h2>🧩 Maven Dependencies</h2>
+            <pre>
+                <code>
+                    {`<dependency>
   <groupId>org.springframework.boot</groupId>
   <artifactId>spring-boot-starter-security</artifactId>
 </dependency>
@@ -27,21 +28,21 @@ const JWT: React.FC = () => {
   <artifactId>jjwt-jackson</artifactId>
   <version>0.11.5</version>
 </dependency>`}
-        </code>
-      </pre>
+                </code>
+            </pre>
 
-      <h2>🔐 JWT Configuration</h2>
-      <pre>
-        <code>
-          {`security.jwt.secret-key=your-secret-key-here
+            <h2>🔐 JWT Configuration</h2>
+            <pre>
+                <code>
+                    {`security.jwt.secret-key=your-secret-key-here
 security.jwt.expiration-time=3600000`}
-        </code>
-      </pre>
+                </code>
+            </pre>
 
-      <h2>⚙️ User Entity (Implements UserDetails)</h2>
-      <pre>
-        <code>
-          {`@Table(name = "users")
+            <h2>⚙️ User Entity (Implements UserDetails)</h2>
+            <pre>
+                <code>
+                    {`@Table(name = "users")
 @Entity
 public class User implements UserDetails {
     @Id
@@ -102,13 +103,13 @@ public class User implements UserDetails {
 
     // Getters and setters
 }`}
-        </code>
-      </pre>
+                </code>
+            </pre>
 
-      <h2>🛠️ JwtService</h2>
-      <pre>
-        <code className="language-java">
-          {`package com.tericcabrel.authapi.services;
+            <h2>🛠️ JwtService</h2>
+            <pre>
+                <code className="language-java">
+                    {`package com.tericcabrel.authapi.services;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -196,12 +197,12 @@ public class JwtService {
         return Keys.hmacShaKeyFor(keyBytes);
     }
 }`}
-        </code>
-      </pre>
-      <h2>🛠️ ApplicationConfiguration</h2>
-      <pre>
-  <code className="language-java">
-{`package com.tericcabrel.authapi.configs;
+                </code>
+            </pre>
+            <h2>🛠️ ApplicationConfiguration</h2>
+            <pre>
+                <code className="language-java">
+                    {`package com.tericcabrel.authapi.configs;
 
 import com.tericcabrel.authapi.repositories.UserRepository;
 import org.springframework.context.annotation.Bean;
@@ -248,12 +249,12 @@ public class ApplicationConfiguration {
         return authProvider;
     }
 }`}
-  </code>
-</pre>
-<h2>🛠️ JwtAuthenticationFilter</h2>
-<pre>
-  <code className="language-java">
-{`package com.tericcabrel.authapi.configs;
+                </code>
+            </pre>
+            <h2>🛠️ JwtAuthenticationFilter</h2>
+            <pre>
+                <code className="language-java">
+                    {`package com.tericcabrel.authapi.configs;
 
 import com.tericcabrel.authapi.services.JwtService;
 import jakarta.servlet.FilterChain;
@@ -330,12 +331,12 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         }
     }
 }`}
-  </code>
-</pre>
-      <h2>🛠️ SecurityConfiguration </h2>
-      <pre>
-  <code className="language-java">
-{`package com.tericcabrel.authapi.configs;
+                </code>
+            </pre>
+            <h2>🛠️ SecurityConfiguration </h2>
+            <pre>
+                <code className="language-java">
+                    {`package com.tericcabrel.authapi.configs;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -399,12 +400,12 @@ public class SecurityConfiguration {
         return source;
     }
 }`}
-  </code>
-</pre>
-      <h2>🛠️ AuthenticationService</h2>
-      <pre>
-  <code className="language-java">
-{`package com.tericcabrel.authapi.services;
+                </code>
+            </pre>
+            <h2>🛠️ AuthenticationService</h2>
+            <pre>
+                <code className="language-java">
+                    {`package com.tericcabrel.authapi.services;
 
 import com.tericcabrel.authapi.dtos.LoginUserDto;
 import com.tericcabrel.authapi.dtos.RegisterUserDto;
@@ -454,12 +455,12 @@ public class AuthenticationService {
                 .orElseThrow();
     }
 }`}
-  </code>
-</pre>
-      <h2>🛠️ AuthenticationController</h2>
-      <pre>
-  <code className="language-java">
-{`import com.tericcabrel.authapi.entities.User;
+                </code>
+            </pre>
+            <h2>🛠️ AuthenticationController</h2>
+            <pre>
+                <code className="language-java">
+                    {`import com.tericcabrel.authapi.entities.User;
 import com.tericcabrel.authapi.dtos.LoginUserDto;
 import com.tericcabrel.authapi.dtos.RegisterUserDto;
 import com.tericcabrel.authapi.responses.LoginResponse;
@@ -501,12 +502,12 @@ public class AuthenticationController {
         return ResponseEntity.ok(loginResponse);
     }
 }`}
-  </code>
-</pre>
-<h2>🛠️ LoginResponse</h2>
-<pre>
-  <code className="language-java">
-{`public class LoginResponse {
+                </code>
+            </pre>
+            <h2>🛠️ LoginResponse</h2>
+            <pre>
+                <code className="language-java">
+                    {`public class LoginResponse {
     private String token;
 
     private long expiresIn;
@@ -529,10 +530,10 @@ public class AuthenticationController {
         return this;
     }
 }`}
-  </code>
-</pre>
-    </div>
-  );
+                </code>
+            </pre>
+        </div>
+    );
 };
 
 export default JWT;

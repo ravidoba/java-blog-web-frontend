@@ -1,0 +1,68 @@
+.database-config-container {
+    padding: 50px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(206, 144, 144, 0.05);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .database-config-container h1 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 0.5rem;
+  }
+  
+  .code-block {
+    margin-bottom: 3rem;
+  }
+  
+  .code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .code-header h2,
+  .code-header h3 {
+    font-size: 1.3rem;
+    color: #007acc;
+    border-left: 4px solid #007acc;
+    padding-left: 0.75rem;
+  }
+  
+  button {
+    background-color: #007f5f;
+    color: white;
+    border: none;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #00664a;
+  }
+  
+  pre {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    overflow-x: auto;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+  }
+  
+  code {
+    font-family: Consolas, monospace;
+    font-size: 0.95rem;
+    white-space: pre-wrap;
+  }
+  

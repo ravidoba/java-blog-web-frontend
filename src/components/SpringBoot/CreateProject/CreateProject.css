@@ -1,0 +1,52 @@
+.project-container {
+  padding: 20px;
+  padding-bottom: 50px;
+  max-width: 1000px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdfdfd;
+  line-height: 1.6;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(206, 144, 144, 0.05);
+  color: #333;
+}
+
+.project-container h1 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 0.5rem;
+}
+
+.project-section {
+  margin-bottom: 2rem;
+}
+
+.project-section h2 {
+  font-size: 1.5rem;
+  color: #007acc;
+  border-left: 4px solid #007acc;
+  padding-left: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-container ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.project-container li {
+  margin-bottom: 0.5rem;
+}
+
+.project-container a {
+  color: #1d72b8;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.project-container a:hover {
+  text-decoration: underline;
+  color: #155a8a;
+}
