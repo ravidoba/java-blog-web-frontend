@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import './Home.css';
-// New-Item -ItemType Directory -Path .\src\components\SpringBoot\AdvanceTopics -Force
-// Set-Location -Path .\src\components\SpringBoot\AdvanceTopics
-// New-Item -ItemType File -Name AdvanceTopics.tsx
-// New-Item -ItemType File -Name AdvanceTopics.css
+// New-Item -ItemType Directory -Path .\src\components\SpringBoot\EntityRelationMapping\Method1 -Force
+// Set-Location -Path .\src\components\SpringBoot\EntityRelationMapping\Method1
+// New-Item -ItemType File -Name Method1.tsx
+// New-Item -ItemType File -Name Method1.css
 
 const Home = () => {
   return (
@@ -17,7 +17,6 @@ const Home = () => {
         <button className="button">Spring Boot</button>
       </Link>
       <button className="button">SQL</button>
-      <button className="button">Microservice</button>
       <Link to="github">
         <button className="button">Github</button>
       </Link>

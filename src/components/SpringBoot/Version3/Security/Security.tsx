@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Security: React.FC = () => {
   return (
     <div className="homeContainer">
-        <Link to="/jwt"><button className="button">JWT</button></Link>
+        <Link to="/springboot/version-3/security/jwt"><button className="button">JWT</button></Link>
     </div>
   );
 };

@@ -11,7 +11,7 @@ const Versions: React.FC = () => {
       <h1>Java Versions</h1>
       <div className="button-grid">
         {versions.map((version) => (
-          <Link to={`/version/${version}`} key={version}>
+          <Link to={`/java/version/${version}`} key={version}>
             <button className="button">Version {version}</button>
           </Link>
         ))}
